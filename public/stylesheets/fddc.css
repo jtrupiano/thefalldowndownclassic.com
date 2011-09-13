@@ -1,0 +1,63 @@
+body {
+  background: url('../images/logo.jpg') no-repeat center top;
+  margin: 0;
+}
+
+#root_container {
+  margin-top: 620px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  background-color: #e0e0e0;
+}
+
+#content {
+  width: 850px;
+  margin: auto;
+}
+
+#content h2 {
+  font-family: Bookman;
+}
+
+#content p {
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#content .section {
+  border-bottom: dashed 1px #999999;
+}
+
+  #buy_now {
+    float: right;
+    width: 160px;
+    margin-left: 5px;
+    border: solid 1px black;
+    border-radius: 15px;
+    background-color: #fdfee0;
+    padding: 0px 15px;
+  }
+    
+    #buy_now h3 {
+      margin-bottom: 5px;
+    }
+
+    #buy_now_label {
+      font-family: Helvetica;
+      font-size: 14px;
+    }
+
+    #buy_now_textfield {
+      width: 160px;
+    }
+
+#content .section-last {
+
+}
+
+#footer {
+  width: 850px;
+  margin: auto;
+  font-family: Helvetica;
+}
