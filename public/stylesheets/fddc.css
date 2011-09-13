@@ -60,4 +60,7 @@ body {
   width: 850px;
   margin: auto;
   font-family: Helvetica;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
 }
