@@ -1,15 +1,66 @@
 body {
-  background: url('../images/logo.jpg') no-repeat center top;
   margin: 0;
+  font-family: Helvetica;
 }
 
 img { border: 0; }
 
+.clear { clear: both; }
+
+.shadow {
+  -moz-box-shadow: 5px 5px 5px #533535;
+  -webkit-box-shadow: 5px 5px 5px #533535;
+  box-shadow: 5px 5px 5px #533535;
+}
+
+#header { 
+  height: auto;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 10px 0px;
+  background-color: #DBCD87;
+  border-bottom: solid 2px #533535;
+  z-index: 1000;
+}
+
+#navigation {
+  line-height: 24px;
+}
+
+  #navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 
+  }
+
+  #navigation ul li {
+    float: left;
+    margin: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  #navigation a {
+    color: #533535;
+    text-decoration: none;
+  }
+
+  #navigation a:hover {
+    text-decoration: underline;
+  }
+
+#logo { 
+  margin-top: 44px;
+  text-align: center;
+}
+
 #root_container {
-  margin-top: 580px;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
-  background-color: #e0e0e0;
+  background-color: #AFC78F;
+  position: relative;
 }
 
 #content {
@@ -22,22 +73,17 @@ img { border: 0; }
 }
 
 #content p, #content li {
-  font-family: Helvetica;
   font-size: 16px;
   line-height: 21px;
-}
-
-#content .section {
-  border-bottom: dashed 1px #999999;
 }
 
   #buy_now {
     float: right;
     width: 160px;
     margin-left: 5px;
-    border: solid 1px black;
+    border: solid 1px #533535;
     border-radius: 15px;
-    background-color: #fdfee0;
+    background-color: #E9DA8F;
     padding: 0px 15px;
   }
     
@@ -46,7 +92,6 @@ img { border: 0; }
     }
 
     #buy_now_label {
-      font-family: Helvetica;
       font-size: 14px;
     }
 
@@ -56,21 +101,20 @@ img { border: 0; }
 
   #schedule {
     margin: 0px 15px;
-    border: solid 1px #777;
+    border: solid 2px #533535;
   }
 
     #schedule th, #schedule td {
       padding: 14px 12px;
-      border-bottom: solid 1px #555;
+      border-bottom: solid 2px #533535;
       vertical-align: top;
-      font-family: Helvetica;
       font-size: 12px;
       text-align: left;
     }
 
     #schedule th {
-      background-color: #555;
-      color: #fff;
+      background-color: #533535;
+      color: #E9DA8F;
       font-size: 14px;
     }
 
@@ -100,7 +144,7 @@ img { border: 0; }
     }
 
     #schedule tr.emphasize td {
-      background-color: #fdfee0;
+      background-color: #E9DA8F;
     }
 
     #schedule tr.last td {
@@ -111,11 +155,21 @@ img { border: 0; }
 
 }
 
+#footer_container {
+  width: 100%;
+  background-color: #DBCD87;
+  border-top: solid 1px #533535;
+}
+
 #footer {
   width: 850px;
   margin: auto;
-  font-family: Helvetica;
+  padding: 15px 0px;
   text-align: center;
   font-size: 13px;
   font-weight: bold;
+}
+
+#footer p {
+  margin: 0;
 }
