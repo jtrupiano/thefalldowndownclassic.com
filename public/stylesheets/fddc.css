@@ -3,6 +3,8 @@ body {
   margin: 0;
 }
 
+img { border: 0; }
+
 #root_container {
   margin-top: 580px;
   border-top: solid 1px black;
@@ -50,6 +52,59 @@ body {
 
     #buy_now_textfield {
       width: 160px;
+    }
+
+  #schedule {
+    margin: 0px 15px;
+    border: solid 1px #777;
+  }
+
+    #schedule th, #schedule td {
+      padding: 14px 12px;
+      border-bottom: solid 1px #555;
+      vertical-align: top;
+      font-family: Helvetica;
+      font-size: 12px;
+      text-align: left;
+    }
+
+    #schedule th {
+      background-color: #555;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    #schedule td h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    #schedule td p {
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 4px;
+    }
+
+    #schedule td div.details p {
+      margin: 3px 0;
+    }
+
+    #schedule td div.details p span {
+      width: 7em;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    #schedule td.date {
+      text-align: center;
+    }
+
+    #schedule tr.emphasize td {
+      background-color: #fdfee0;
+    }
+
+    #schedule tr.last td {
+      border-bottom: none;
     }
 
 #content .section-last {
