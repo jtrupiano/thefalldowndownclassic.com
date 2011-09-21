@@ -129,15 +129,17 @@ img { border: 0; }
       margin-top: 4px;
     }
 
-    #schedule td div.details p {
-      margin: 3px 0;
-    }
+      #schedule table.details th, #schedule table.details td {
+        background-color: inherit;
+        color: inherit;
+        border: none;
+        font-size: 12px;
+        padding: 4px 4px;
+      }
 
-    #schedule td div.details p span {
-      width: 7em;
-      display: inline-block;
-      font-weight: bold;
-    }
+      #schedule table.details th {
+        white-space: nowrap;
+      }
 
     #schedule td.date {
       text-align: center;
