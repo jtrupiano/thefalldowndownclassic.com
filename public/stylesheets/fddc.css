@@ -149,6 +149,10 @@ img { border: 0; }
       background-color: #E9DA8F;
     }
 
+    #schedule tr.emphasize td.cost {
+      font-weight: bold;
+    }
+
     #schedule tr.last td {
       border-bottom: none;
     }
