@@ -5,6 +5,19 @@ body {
 
 img { border: 0; }
 
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .clear { clear: both; }
 
 .shadow {
@@ -128,19 +141,6 @@ img { border: 0; }
       line-height: 16px;
       margin-top: 4px;
     }
-
-      #schedule td p a {
-        text-decoration: none;
-        color: blue;
-      }
-
-      #schedule td p a:visited {
-        color: blue;
-      }
-
-      #schedule td p a:hover {
-        text-decoration: underline;
-      }
 
       #schedule table.details th, #schedule table.details td {
         background-color: inherit;
