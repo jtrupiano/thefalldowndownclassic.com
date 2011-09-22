@@ -129,6 +129,19 @@ img { border: 0; }
       margin-top: 4px;
     }
 
+      #schedule td p a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      #schedule td p a:visited {
+        color: blue;
+      }
+
+      #schedule td p a:hover {
+        text-decoration: underline;
+      }
+
       #schedule table.details th, #schedule table.details td {
         background-color: inherit;
         color: inherit;
