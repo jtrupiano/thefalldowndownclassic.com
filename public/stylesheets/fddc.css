@@ -33,7 +33,7 @@ a:hover {
   top: 0px;
   left: 0px;
   padding: 10px 0px;
-  background-color: #DBCD87;
+  background-color: #D69754;
   border-bottom: solid 2px #533535;
   z-index: 1000;
 }
@@ -64,10 +64,47 @@ a:hover {
     text-decoration: underline;
   }
 
-#logo { 
+#masthead_container {
   margin-top: 44px;
-  text-align: center;
+  background-color: #DBCD87;
 }
+
+  #masthead {
+    width: 850px;
+    margin: auto;
+  }
+
+    #logo { 
+      text-align: center;
+      width: 550px;
+      float: left;
+    }
+
+    #sign_up {
+      width: 300px;
+      float: left;
+    }
+
+      #buy_now {
+        width: 225px;
+        margin: 20px 5px;
+        border: solid 1px #533535;
+        border-radius: 15px;
+        background-color: #AFC78F;
+        padding: 10px 15px;
+      }
+        
+        #buy_now h3 {
+          margin: 5px 0px;
+        }
+
+        #buy_now_label {
+          font-size: 14px;
+        }
+
+        #buy_now_textfield {
+          width: 220px;
+        }
 
 #root_container {
   border-top: solid 1px black;
@@ -89,28 +126,6 @@ a:hover {
   font-size: 16px;
   line-height: 21px;
 }
-
-  #buy_now {
-    float: right;
-    width: 160px;
-    margin-left: 5px;
-    border: solid 1px #533535;
-    border-radius: 15px;
-    background-color: #E9DA8F;
-    padding: 0px 15px;
-  }
-    
-    #buy_now h3 {
-      margin-bottom: 5px;
-    }
-
-    #buy_now_label {
-      font-size: 14px;
-    }
-
-    #buy_now_textfield {
-      width: 160px;
-    }
 
   #schedule {
     margin: 0px 15px;
@@ -176,7 +191,7 @@ a:hover {
 
 #footer_container {
   width: 100%;
-  background-color: #DBCD87;
+  background-color: #D69754;
   border-top: solid 1px #533535;
 }
 
