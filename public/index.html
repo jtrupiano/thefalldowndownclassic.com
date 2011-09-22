@@ -3,14 +3,16 @@
 <head>
   <title>The Fall Down (Down) Classic | 2011 | A Wang 2 Mouth Production</title>
   <link href="stylesheets/fddc.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="javascripts/jquery-1.6.4.min.js"></script>
+  <script type="text/javascript" src="javascripts/fddc.js"></script>
 </head>
 <body>
   <div id="header">
     <div id="navigation">
       <ul>
-        <li><a href="#buy_now">Rego Now</a></li>
-        <li><a href="#schedule_header">Schedule of Events</a></li>
-        <li><a href="#out_of_towners">Out of Towners</a></li>
+        <li><a href="javascript:void(0)" onclick="goToByScroll('buy_now');">Rego Now</a></li>
+        <li><a href="javascript:void(0)" onclick="goToByScroll('schedule_header');">Schedule of Events</a></li>
+        <li><a href="javascript:void(0)" onclick="goToByScroll('out_of_towners');">Out of Towners</a></li>
       </ul>
       <br class="clear" />
     </div>
@@ -24,7 +26,7 @@
         <div id="buy_now" class="shadow">
           <h3>Sign Up Now!</h3>
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="cmd" value="_s-xclick" />
             <table cellpadding="0" cellspacing="0">
               <tr><td>
                 <input type="hidden" name="on0" value="Hash Name and Kennel" />
@@ -33,9 +35,9 @@
               <tr><td><input id="buy_now_textfield" type="text" name="os0" maxlength="200" /></td></tr>
             </table>
             <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-            ">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            " />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
           </form>
         </div>
         <h2>Holy Sh!t Batman, What's The Fall Down (Down) Classic?</h2>
