@@ -1,0 +1,60 @@
+#!/usr/bin/env ruby
+
+files = Dir["/Users/jtrupiano/Dropbox/fddc\ photos/*"]
+files.select! {|filepath| File.file?(filepath) && File.extname(filepath) != ""}
+
+files.map! do |filepath|
+  filename = File.basename(filepath)
+  hasher_name = File.basename(filepath, File.extname(filepath))
+  {
+    :filename       => filename,
+    :hasher_name    => hasher_name,
+    :original_path  => filepath,
+    :thumbnail_path => "/Users/jtrupiano/projects/thefalldowndownclassic.com/public/images/whos_cumming/thumbnails/#{filename}",
+    :fullsize_path  => "/Users/jtrupiano/projects/thefalldowndownclassic.com/public/images/whos_cumming/#{filename}"
+  }
+end
+
+files.each do |file|
+  system("convert \"#{file[:original_path]}\" -thumbnail 150x150 \"#{file[:thumbnail_path]}\"")
+  system("cp \"#{file[:original_path]}\" \"#{file[:fullsize_path]}\"")
+end
+
+html_links = files.map do |file|
+  <<-HTML
+        <a href="images/whos_cumming/#{file[:filename]}" rel="prettyPhoto" title="#{file[:hasher_name]}"><img src="images/whos_cumming/thumbnails/#{file[:filename]}" alt="#{file[:hasher_name]}" /></a>
+  HTML
+end
+
+new_dynamic_content = <<-HTML
+        <!-- Begin Who's Cumming -->
+#{html_links.join}
+        <br class="clear" />
+        <!--  End Who's Cumming  -->
+HTML
+
+replacement_lines = []
+File.open('public/index.html', 'r+') do |f|
+  lines = f.readlines
+  found_start_of_replacement = false
+  lines.each  do |line|
+    if !found_start_of_replacement
+      if line =~ /\<\!\-\- Begin Who's Cumming \-\-\>/
+        found_start_of_replacement = true
+        replacement_lines << new_dynamic_content
+      else
+        replacement_lines << line
+      end
+    else
+      if line =~ /\<\!\-\-  End Who's Cumming  \-\-\>/
+        found_start_of_replacement = false
+      elsif !found_start_of_replacement
+        replacement_lines << line
+      end
+    end
+  end
+
+  f.pos = 0
+  f.print replacement_lines.join
+  f.truncate(f.pos)
+end
