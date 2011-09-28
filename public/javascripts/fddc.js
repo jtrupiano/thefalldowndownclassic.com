@@ -5,12 +5,9 @@ function goToByScroll(id) {
 }
 
 $(function() {
-  $('#whos_cumming img').hover(
-    function() {
-      $(this).parent().addClass("hover");
-    }, 
-    function() {
-      $(this).parent().removeClass("hover");
-    }
-  );
+  $("a[rel^='prettyPhoto']").prettyPhoto({
+    theme: 'facebook', 
+    slideshow: 5000
+  });
 });
+
