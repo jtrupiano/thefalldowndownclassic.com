@@ -138,6 +138,23 @@ a:hover {
   line-height: 21px;
 }
 
+  #whos_cumming span {
+    float: left;
+    width: 150px;
+    margin: 15px 10px;
+  }
+
+    #whos_cumming span img {
+      border: solid 3px transparent;
+    }
+
+    #whos_cumming span.hover img {
+      border: solid 3px #E9DA8F;
+      -moz-box-shadow: 0 0 25px #E9DA8F;
+      -webkit-box-shadow: 0 0 25px #E9DA8F;
+      box-shadow: 0 0 25px #E9DA8F;
+    }
+
   #schedule {
     margin: 0px 15px;
     border: solid 2px #533535;
