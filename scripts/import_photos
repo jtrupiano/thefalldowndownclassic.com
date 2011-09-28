@@ -22,15 +22,15 @@ end
 
 html_links = files.map do |file|
   <<-HTML
-        <a href="images/whos_cumming/#{file[:filename]}" rel="prettyPhoto[whos_cumming]" title="#{file[:hasher_name]}"><img src="images/whos_cumming/thumbnails/#{file[:filename]}" alt="#{file[:hasher_name]}" /></a>
+          <a href="images/whos_cumming/#{file[:filename]}" rel="prettyPhoto[whos_cumming]" title="#{file[:hasher_name]}"><img src="images/whos_cumming/thumbnails/#{file[:filename]}" alt="#{file[:hasher_name]}" /></a>
   HTML
 end
 
 new_dynamic_content = <<-HTML
-        <!-- Begin Who's Cumming -->
+          <!-- Begin Who's Cumming -->
 #{html_links.join}
-        <br class="clear" />
-        <!--  End Who's Cumming  -->
+          <br class="clear" />
+          <!--  End Who's Cumming  -->
 HTML
 
 replacement_lines = []
