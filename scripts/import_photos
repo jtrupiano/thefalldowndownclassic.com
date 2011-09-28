@@ -22,7 +22,7 @@ end
 
 html_links = files.map do |file|
   <<-HTML
-        <a href="images/whos_cumming/#{file[:filename]}" rel="prettyPhoto" title="#{file[:hasher_name]}"><img src="images/whos_cumming/thumbnails/#{file[:filename]}" alt="#{file[:hasher_name]}" /></a>
+        <a href="images/whos_cumming/#{file[:filename]}" rel="prettyPhoto[whos_cumming]" title="#{file[:hasher_name]}"><img src="images/whos_cumming/thumbnails/#{file[:filename]}" alt="#{file[:hasher_name]}" /></a>
   HTML
 end
 
