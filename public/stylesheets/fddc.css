@@ -151,10 +151,10 @@ a:hover {
     }
 
     #whos_cumming a:hover img {
-      border: solid 3px #E9DA8F;
-      -moz-box-shadow: 0 0 25px #E9DA8F;
-      -webkit-box-shadow: 0 0 25px #E9DA8F;
-      box-shadow: 0 0 25px #E9DA8F;
+      border: solid 4px #D69754;
+      -moz-box-shadow: 0 0 25px #D69754;
+      -webkit-box-shadow: 0 0 25px #D69754;
+      box-shadow: 0 0 25px #D69754;
     }
 
   #schedule {
