@@ -141,7 +141,9 @@ a:hover {
   #whos_cumming a {
     float: left;
     width: 150px;
+    height: 150px;
     margin: 15px 10px;
+    text-align: center;
   }
 
     #whos_cumming a img {
