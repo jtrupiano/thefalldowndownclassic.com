@@ -109,8 +109,12 @@ a:hover {
           margin: 5px 0px;
         }
 
-        #buy_now_label {
-          font-size: 14px;
+        #buy_now p {
+          font-size: 12px;
+        }
+
+        .buy_now_label {
+          font-size: 12px;
         }
 
         #buy_now_textfield {

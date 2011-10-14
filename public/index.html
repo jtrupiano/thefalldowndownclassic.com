@@ -37,19 +37,38 @@
           <img src="images/call_to_action.png" alt="Be a Part of Chicago Hashing History for Only $40!" />
         </div>
         <div id="buy_now" class="shadow">
-          <h3>Get Your Rego Now!</h3>
+          <h3>We're Sold Out!...Sort Of</h3>
+          <p>
+            The hash limo on Saturday is full and the giveaways are all spoken for.
+            But don't fret, you can still join us on an a la carte basis.
+          </p>
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="cmd" value="_s-xclick" />
-            <table cellpadding="0" cellspacing="0">
+            <table>
               <tr><td>
-                <input type="hidden" name="on0" value="Hash Name and Kennel" />
-                <label for="buy_now_textfield" id="buy_now_label">Hash Name and Kennel</label>
+                <input type="hidden" name="on0" value="A La Carte Options" />
+                <select id="buy_now_dropdown" name="os0">
+                  <option value="Superstar! (Fri 7pm) only">Fri 7pm only - $10.00</option>
+                  <option value="Children of the Shiggy (Sat) only (no hash limo)">Sat only - $35.00</option>
+                  <option value="Fatboy BooBoo (Sun 11am) only">Sun 11am only - $10.00</option>
+                  <option value="Superstar! and Children of the Shiggy only (no hash limo)">Fri 7pm and Sat only - $40.00</option>
+                  <option value="Superstar! and Fatboy BooBoo only">Fri 7pm and Sun 11am only - $20.00</option>
+                  <option value="Children of the Shiggy and Fatboy BooBoo only (no hash limo)">Sat and Sun 11am only - $40.00</option>
+                  <option value="All FDDC Trails (no hash limo)">All FDDC Trails - $40.00</option>
+                </select>
               </td></tr>
-              <tr><td><input id="buy_now_textfield" type="text" name="os0" maxlength="200" /></td></tr>
+              <tr><td>
+                <input type="hidden" name="on1" value="Hash Name and Kennel" />
+                <label for="buy_now_textfield" class="buy_now_label">Hash Name and Kennel</lable>
+              </td></tr>
+              <tr><td>
+                <input id="buy_now_textfield" type="text" name="os1" maxlength="200" />
+              </td></tr>
             </table>
-            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHXwYJKoZIhvcNAQcEoIIHUDCCB0wCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCQ8LGqKz8S35mqdvk6yqRihzyf7V1kJtqwNAHx0ZAd+gedyux+SjE9lY+T/l9gDI0KnhD0Xn6Bc24D1fNUIQXvgV3qvJk3rgr8MiN5+IIeFHwt+hH0Y0l2DwbaXcxi8NIbgrWvkiFfPd0S+Bec8o6/Y9RHes9ICzevFEQ67Zqz2DELMAkGBSsOAwIaBQAwgdwGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIJ/sK1YLU3AOAgbiF7UqOz34Nxrs1Eu8aw+gc8qyH3yNyoAKEEQ80b0nt4px0lby6HEYbmwjd6bbzWs1g3gPa49xhj74mqTANByycX1GdBSku2QRRFN/6LoMs+jT2uPXXWnOV/GpjEtoTKXNLCX/avFW8QGs8MfPgjZgAnNbq8x/fJD8681AaS2F52lg/9pWbFfM7ycDDeS/kOktEl2THK5m/Dmno3ngmNR4o8FvrjEPkSdvmfBye9CzxAmOAU0nyRq3MoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTEwOTEzMTY1MTE3WjAjBgkqhkiG9w0BCQQxFgQUkKtVewX9f46TfY22czWe5KhB/N0wDQYJKoZIhvcNAQEBBQAEgYBI2GhJT2n1IKb3p2iEdhc1lB9m3TP64wbpDEOlWwsVUmYqkVeuH7WNzZwLqSqBGufohtKXQsp1vARyi1D+GgdLe8hSLhP3UdnnMOw2xViI6Gm0OeMob5hnl262PFPfrhCJmQmsX/rea8uyGARwYVTWHA+L6c5/2T2DwbYoX8qXNQ==-----END PKCS7-----
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
             " />
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
           </form>
         </div>
